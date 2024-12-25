@@ -2,7 +2,7 @@
 
 import mongoose from 'mongoose';
 
-const MONGODB_URI = process.env.MONGODB_URI;
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://Hello_World:4xXExjX3S5Oial6j@cluster0.m3wscmw.mongodb.net/";
 
 export async function dbConnect() {
   try {
